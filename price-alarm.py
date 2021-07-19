@@ -44,10 +44,10 @@ while True:
     if bzz_name.text == "DAI / 1 BZZ":
         print("bzz的价格是：", bzz_price.text)
         try:
-            response = requests.get("https://www.okex.com/api/v5/market/ticker?instId=BZZ-USDT", timeout=5).json()
-            print("正在获取Okex的价格")
-            ok = response['data'][0]['last']
-            print("ok的价格是：", ok)
+            #response = requests.get("https://www.okex.com/api/v5/market/ticker?instId=BZZ-USDT", timeout=5).json()
+            #print("正在获取Okex的价格")
+            #ok = response['data'][0]['last']
+            #print("ok的价格是：", ok)
         except Exception:
-            print("获取okex的数据失败")
+            print("----1---获取okex的数据失败-------")
     time.sleep(10)
